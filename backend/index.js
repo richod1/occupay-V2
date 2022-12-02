@@ -7,7 +7,7 @@ const app = express();
 
 const port = process.env.PORT || 8001
 
-const connection_url="mongodb+srv://degraft:TqCumhDUy86uQxO6@cluster0.srsuiih.mongodb.net/?retryWrites=true&w=majority"
+const connection_url="mongodb+srv://degraft:TqCumhDUy86uQxO6@cluster0.srsuiih.mongodb.net/?retryWrites=true&w=majority";
 
 
 //middlewares
@@ -20,7 +20,7 @@ app.use(Cors());
 mongoose.connect(connection_url , {
     useNewUrlParser:true,
     // useCreateIndex:true,
-    useUnifiedTopology:true,
+    // useUnifiedTopology:true,
 })
 
 
@@ -54,4 +54,4 @@ app.get('/tinder/cards',(req, res)=>{
 app.listen(port , ()=> console.log(`app is running on: ${port} `))
 
 
-//how to hook react with node js with axios?
+//
