@@ -5,6 +5,7 @@ import {NavLink as LinkR} from "react-router-dom"
 import Hero from './Hero'
 import About from './About'
 import Payfee from './Payfee'
+import Contact from './Contact'
 import Payresit from './Payresit'
 import { homeObjOne,homeObjTwo,homeObjThree } from './Data'
 
@@ -52,6 +53,7 @@ function Home(props) {
       <About {...homeObjOne}/>
       <Payfee {...homeObjTwo}/>
       <Payresit {...homeObjThree}/>
+      <Contact/>
       {props.children}
        </>
     
